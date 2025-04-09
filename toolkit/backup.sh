@@ -12,3 +12,7 @@ FILENAME="backup-$DATE.tar.gz"
 tar -czf "$BACKUP_DIR/$FILENAME" "$SOURCE_DIR"
 
 echo "✅ Backup created at $BACKUP_DIR/$FILENAME"
+
+echo "checking for old backups to delete..."
+find "$BACKUP_DIR" -type f -name "*.tar.gz" -mtime +7 -exec rm {}\;
+echo "delte backups older than 7 days"
