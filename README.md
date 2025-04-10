@@ -76,8 +76,75 @@ pgsql
 Copy
 Edit
 0 2 * * * /path/to/backup.sh
+
 Runs the backup at 2:00 AM every day.
 
+
+
+2nd Project:
+
+📌 1. Project Title
+A simple and descriptive name like:
+System Monitoring Dashboard using Bash & Flask
+
+📄 2. Project Overview
+Explain briefly what the project does:
+
+Monitors CPU, memory, disk usage, and uptime.
+
+Uses a shell script to collect data.
+
+Displays the data on a webpage using Flask.
+
+⚙️ 3. Features
+List the main things it can do:
+
+Real-time system stats
+
+Auto-refresh dashboard
+
+Lightweight and fast
+
+Works on any Linux system
+
+🧰 4. Technologies Used
+Mention what tools you're using:
+
+Bash (to collect stats)
+
+Python & Flask (to serve dashboard)
+
+HTML/CSS (to make it look clean)
+
+📦 5. Installation Steps
+Step-by-step guide a beginner can follow:
+
+Create a project folder.
+
+Write your shell script.
+
+Create the Flask Python file.
+
+Install Flask using pip.
+
+Make the script executable.
+
+Run the Flask server.
+
+Open the dashboard in your browser.
+
+🖥️ 6. How to Run on Linux VM
+Explain this since you're using Oracle VM:
+
+Boot your Ubuntu VM.
+
+Open Terminal.
+
+Run your Python Flask server.
+
+Access http://localhost:5000 in a VM browser.
+
+If needed outside VM: set up port forwarding in Oracle VM settings.
 👨‍💻 Author
 Made by Pratham Jain
 A beginner-friendly toolkit to learn and practice Bash scripting & automation.
