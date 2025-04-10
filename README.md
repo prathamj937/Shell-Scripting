@@ -144,8 +144,85 @@ Run your Python Flask server.
 
 Access http://localhost:5000 in a VM browser.
 
+Project 3:
+
+🔍 Port Scanner (Bash)
+A lightweight Port Scanner written in Bash, perfect for checking open ports on a host or server (like localhost or a website). Uses nc (netcat) to scan and show which ports are open or closed.
+
+🧰 Features
+Scan a range of ports on any IP or domain.
+
+Lightweight and fast (especially for small ranges).
+
+Clear results with ✅ open / ❌ closed indicators.
+
+Beginner-friendly and easy to modify.
+
+🚀 Getting Started
+📦 Prerequisites
+Make sure your Linux system has the following:
+
+Bash (already present in most Linux distros)
+
+Netcat (nc)
+Install it using:
+
+bash
+Copy
+Edit
+sudo apt install netcat
+📂 File Structure
+bash
+Copy
+Edit
+port-scanner/
+│
+├── port-scanner.sh     # The Bash script
+├── README.md           # This readme file
+🧪 How to Run
+Step 1: Make the script executable
+bash
+Copy
+Edit
+chmod +x port-scanner.sh
+
+Step 2: Run the script
+bash
+Copy
+Edit
+./port-scanner.sh <HOST/IP> <START_PORT> <END_PORT>
+✅ Example
+bash
+Copy
+Edit
+./port-scanner.sh 127.0.0.1 20 80
+This will scan ports 20 to 80 on your local machine (127.0.0.1).
+
+🔍 Sample Output
+bash
+Copy
+Edit
+🔍 Scanning 127.0.0.1 from port 20 to 80...
+🔴 Port 20 is CLOSED
+🟢 Port 22 is OPEN
+🔴 Port 23 is CLOSED
+🟢 Port 80 is OPEN
+🧠 How It Works (Simplified)
+It takes an IP and port range as input.
+
+It runs a loop from start to end port.
+
+Uses nc (netcat) to check if the port is open:
+
+If open ➜ shows ✅
+
+If closed ➜ shows ❌
+
+
+
 If needed outside VM: set up port forwarding in Oracle VM settings.
 👨‍💻 Author
 Made by Pratham Jain
 A beginner-friendly toolkit to learn and practice Bash scripting & automation.
+
 
